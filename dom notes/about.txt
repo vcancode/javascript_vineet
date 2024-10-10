@@ -1,0 +1,3 @@
+video 1 notes - https://github.com/Ansuman9899/Javascript-Basics
+DOM 1 - getelementbyid , query selector and changes in webpage using js 
+getandset  -  more about queryselector , getelementbytag,  making changes in webpage using them and iteration through nodelist and htmlcollection 
