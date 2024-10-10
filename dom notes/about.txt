@@ -1,6 +1,6 @@
 video 1 notes - https://github.com/Ansuman9899/Javascript-Basics
-DOM 1 - getelementbyid , query selector and changes in webpage using js 
-getandset  -  more about queryselector , getelementbytag,  making changes in webpage using them and iteration through nodelist and htmlcollection 
-dom_tree -  operations on parent and childnodes 
-classlist&toogle - classes of an element in html, removing and adding classes ,toogling classes in html file
-createElement - createElement,append,prepend,remove,before,after ---- basically adding new elements to html using js
+file1 - getelementbyid , query selector and changes in webpage using js 
+file2  -  more about queryselector , getelementbytag,  making changes in webpage using them and iteration through nodelist and htmlcollection 
+file3 -  operations on parent and childnodes 
+file4 - classes of an element in html, removing and adding classes ,toogling classes in html file
+file5 - createElement,append,prepend,remove,before,after ---- basically adding new elements to html using js
