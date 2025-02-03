@@ -5,3 +5,4 @@ file3 -  operations on parent and childnodes
 file4 - classes of an element in html, removing and adding classes ,toogling classes in html file
 file5 - createElement,append,prepend,remove,before,after ---- basically adding new elements to html using js
 file 6 - static list and live list
+file 7 - multiple events
