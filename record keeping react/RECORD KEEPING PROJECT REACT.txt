@@ -1,0 +1,93 @@
+RECORD KEEPING PROJECT REACT
+
+import "./App.css";
+import Header from "./header";
+import React, { useState } from "react";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import { Stack } from "@mui/material";
+import DeleteIcon from '@mui/icons-material/Delete';
+import { Delete } from "@mui/icons-material";
+
+function App() {
+  const [name,setName] = useState("");
+  const [email,setEmail] = useState("");
+  const [data,setData] = useState([]);
+
+
+
+  function changename(e){
+    setName(e.target.value)
+  }
+
+  function changemail(e){
+    setEmail(e.target.value)
+  }
+
+  function addData(){
+    setData([...data,{name,email}])
+    setName("")
+    setEmail("")
+  }
+
+  function remove(index){
+    const arr = data;
+    arr.splice(index,1);
+    setData([...arr])
+  }
+
+  return (
+    <div className="App">
+      <Header />
+      <div className="form">
+        <Stack direction="row" spacing={2}>
+          <TextField
+            value={name}
+            onChange={changename}
+            id="outlined-basic"
+            label="name"
+            variant="outlined"
+            sx={{ bgcolor: "white" }}
+          />
+          <TextField
+            id="outlined-basic"
+            value={email}
+            onChange={changemail}
+            label="email"
+            variant="outlined"
+            sx={{ bgcolor: "white" }}
+          />
+          <Button variant="contained" sx={{ bgcolor: "green" }} onClick={addData}>
+            Add
+          </Button>
+        </Stack>
+      </div>
+
+      <div className="data">
+            <div className="data_list">
+            <h4>Name</h4>
+            <h4>Email</h4>
+            <h4>Remove</h4>
+            </div>
+
+            {
+              data.map(
+                (ele,index)=>{
+                  return (
+                          <div key={index} className="data_list">
+                          <h4>{ele.name}</h4>
+                          <h4>{ele.email}</h4>
+                          <Button onClick={()=>remove(index)}  variant="contained" sx={{ bgcolor: "red" }} >
+                            <Delete/>
+                          </Button>
+                          </div>
+                  )
+                }
+              )
+            }
+      </div>
+    </div>
+  );
+}
+
+export default App;
