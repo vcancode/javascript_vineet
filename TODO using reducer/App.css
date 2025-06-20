@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+
+#root{
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.todo{
+  display: flex;
+  padding: 20px;
+  background-color: rgb(126, 251, 0);
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+}
+
+h1{
+  color: black;
+  font-family:cursive;
+  font-size: 60px;
+}
+form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.input-todo{
+  background-color: white;
+  color: black;
+  width: 80%;
+  padding: 15px;
+}
+
+.Add-button{
+  background-color: darkblue;
+  width: 20%;
+  padding: 10px;
+  border-top-right-radius:10px ;
+  border-bottom-right-radius:10px ;
+}
+
+.task-div{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+  height: 50px;
+  padding: 20px;
+}
+.done{
+  background-color: green;
+  padding: 10px;
+}
+.delete{
+  background-color: red;
+  padding: 10px;
+}
+
+.task-div-main{
+  width: 100%;
+}
+
+.task-btns{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.tick{
+  text-decoration: line-through;
+}
